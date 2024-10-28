@@ -1,0 +1,93 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 100px;
+}
+
+.content {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.header {
+  /* position: relative; */
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(206, 137, 137);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.anchor {
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  right: 5%;
+}
+
+.slide {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(196, 209, 184);
+}
+
+.slides > li > img {
+  width: 500px;
+  height: 450px;
+  border-radius: 20px;
+}
+
+.slides > li {
+  list-style: none;
+  margin-top: 10px;
+  float: left;
+  width: 500px;
+  height: 450px;
+}
+
+.slides > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.slide_wrapper {
+  position: relative;
+  top: 200px;
+  width: 1200px;
+  height: 450px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.controls {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.controls span {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(236, 171, 151);
+
+  color: black;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
