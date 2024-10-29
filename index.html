@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css"
     />
+
     <title>Document</title>
   </head>
   <body>
@@ -20,6 +21,11 @@
 
       <div class="anchor">
         <a href="#slide">슬라이드</a>
+        <a href="#modal">모달</a>
+      </div>
+
+      <div class="top">
+        <a href="index.html#top">🔝</a>
       </div>
     </header>
 
@@ -39,6 +45,20 @@
         <span class="prev">이전</span>
         <span class="next">다음</span>
       </p>
+    </section>
+
+    <section id="modal" class="modal">
+      <div id="modal-container">
+        <div id="restaurant-modal">
+          <span class="close-btn" id="close-modal">
+            <img src="./images/close.png" alt="닫기" />
+          </span>
+          <div id="restaurant-img"></div>
+          <div id="restaurant-name"></div>
+          <div id="restaurant-address"></div>
+          <div id="restaurant-menu"></div>
+        </div>
+      </div>
     </section>
 
     <script src="./javascript/slide.js"></script>

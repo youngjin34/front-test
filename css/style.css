@@ -2,6 +2,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .title {
   font-size: 36px;
   line-height: 100px;
@@ -33,7 +37,19 @@ a {
   font-weight: bold;
   position: fixed;
   right: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
+
+.top > a {
+  font-size: 32px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+/* ----------------- slide ------------------------- */
 
 .slide {
   height: 100vh;
@@ -90,4 +106,43 @@ a {
   padding: 10px 20px;
   margin: 0 10px;
   cursor: pointer;
+}
+
+/* -------------------- modal ------------------------ */
+.modal {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(173, 204, 229);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 32px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.modal-content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.modal-img-a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
